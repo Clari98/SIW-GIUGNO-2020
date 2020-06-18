@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+<head>
+<title>Progetto</title>
+</head>
+<body>
+	<h1 th:text="${project.name}"></h1>
+	<h4>
+		<a th:href="'/projects/' + ${project.id} + '/editProject'">Change
+			project name</a>
+	</h4>
+	<h4 th:text="${project.initialDate}" style="color: gray"></h4>
+	<div th:if="${members.size() > 0}">
+		<h3>Shared with:</h3>
+		<ul>
+			<li th:each="member : ${member}">
+				<div th:text="${member.firstname} + ' ' + ${member.lastname}"></div>"
+			</li>
+		</ul>
+	</div>
+	<h4>
+		<a th:href="'/projects/' + ${project.id} + '/tasks'">Project Tasks</a>
+	</h4>
+	<h3>Tags</h3>
+	<ul>
+		<li th:each="tag : ${project.tags}">
+			<div th:text="${tag.name}"></div>
+			<div th:text="${tag.color}"></div>
+			<div th:text="${tag.description}" style=""></div>
+		</li>
+	</ul>
+	<h4>
+		<a th:href="'/projects/' + ${project.id} + '/addTag'">Add tag to
+			your project</a>
+	</h4>
+</body>
+</html>
