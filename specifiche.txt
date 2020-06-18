@@ -1,0 +1,17 @@
+CASI D'USO IMPLEMENTATI User:
+-Signup
+-Autenticazione
+-Visualizzare il mio profilo
+
+CASI D'USO IMPLEMENTATI Project:
+-creare un nuovo progetto
+-visualizzare i miei progetti
+-visualizzare i progetti condivisi con me
+-aggiornare i dati di un mio progetto
+-cancellare un mio progetto
+-aggiungere un tag ad un mio progetto(estensione)
+
+CASI D'USO IMPLEMENTATI Task:
+-aggiungere un nuovo task ad un mio progetto
+-aggiungere un tag ad un task di un mio progetto(estensione)
+
